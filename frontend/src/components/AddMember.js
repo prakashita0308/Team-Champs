@@ -37,7 +37,7 @@ function AddMember() {
     data.append("image", form.image);
 
     try {
-      await axios.post("http://localhost:5000/api/members", data);
+      await axios.post("http://localhost:8000/api/members", data);
       alert("Member added!");
     } catch (err) {
       alert("Failed to add member.");

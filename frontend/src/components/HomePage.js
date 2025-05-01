@@ -5,8 +5,8 @@ function HomePage() {
   return (
     <div className="homepage-container">
       <div className="header">
-        <h1>Team CodeHerThing</h1>
-        <p className="subtitle">Welcome to the CodeHerThing Management!!</p>
+        <h1>Team Champs</h1>
+        <p className="subtitle">Welcome to the Champs Management!!</p>
       </div>
 
       <div className="manage-team">

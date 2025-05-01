@@ -7,7 +7,7 @@ function MemberDetails() {
   const [member, setMember] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/members/${id}`)
+    axios.get(`http://localhost:8000/api/members/${id}`)
       .then(res => setMember(res.data));
   }, [id]);
 
@@ -16,7 +16,7 @@ function MemberDetails() {
   return (
     <div className="details" style={styles.container}>
       <img
-        src={`http://localhost:5000/uploads/${member.image}`}
+        src={`http://localhost:8000/uploads/${member.image}`}
         alt={member.name}
         style={styles.image}
       />

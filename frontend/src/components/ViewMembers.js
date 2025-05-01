@@ -6,7 +6,7 @@ function ViewMembers() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/members')
+    axios.get('http://localhost:8000/api/members')
       .then(res => setMembers(res.data));
   }, []);
 
@@ -14,7 +14,7 @@ function ViewMembers() {
     <div className="card-grid">
       {members.map(member => (
         <div className="card" key={member._id}>
-          <img src={`http://localhost:5000/uploads/${member.image}`} alt={member.name} />
+          <img src={`http://localhost:8000/uploads/${member.image}`} alt={member.name} />
           <h3>{member.name}</h3>
           <p style={{ color: 'white' }}>{member.roll}</p>
         <p style={{ color: 'white' }}>{member.degree}</p>
