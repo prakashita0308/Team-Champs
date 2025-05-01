@@ -12,8 +12,12 @@ function HomePage() {
       <div className="manage-team">
         <h3>Manage Team</h3>
         <div className="buttons">
-          <Link to="/add"><button className="btn">Add Member</button></Link>
-          <Link to="/view"><button className="btn">View Members</button></Link>
+          <Link to="/add" aria-label="Add a new team member">
+            <button className="btn">Add Member</button>
+          </Link>
+          <Link to="/view" aria-label="View all team members">
+            <button className="btn">View Members</button>
+          </Link>
         </div>
       </div>
     </div>
